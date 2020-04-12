@@ -1,11 +1,11 @@
-function registerFunction() {
+function resetFunction() {
     var email = document.getElementById("email");
     var password = document.getElementById("password");
     var token = document.getElementById("token");
 
-if(validateMail(email) && validatePassRegister(password))
+if(validateMail(email) && validatePass(password))
 	{
-		var displayed = 0;
+        var displayed = 0;
     	const requestData = `email=${email.value}&password=${password.value}&token=${token.value}`;
     	var xhttp;
     	if (window.XMLHttpRequest) {
@@ -22,6 +22,16 @@ if(validateMail(email) && validatePassRegister(password))
             	console.log(xhttp.response);
             	location.assign("index.html");
         	   }
+               else
+                if (this.status == 403)
+                {
+                    if(displayed == 0)
+                    {
+                        alert("Token has expired.");
+                        location.reload(); //Dau refresh la pagina ca sa golesc campurile
+                        displayed++;
+                    }
+                }
     		};
 
     	xhttp.open("POST", "https://sma-a4.herokuapp.com/auth/reset_password/callback", true);
@@ -34,7 +44,7 @@ if(validateMail(email) && validatePassRegister(password))
 
 
 // VALIDARI
-function validatePassRegister(pw) {
+function validatePass(pw) {
 	if (pw.value == "")
 	{
 		alert("You didn't enter a password.\n");
