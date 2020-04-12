@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Comun.css">
+    <link rel="stylesheet" type="text/css" href="mail-check.css">
+    <title>Verify Email</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src=logo_SMA_final.png alt="Logo unavailable" height="70" width="80">
+        </div>
+        <ul class="link-list">
+            <li><a href="./index.html" id="sign-in">Sign in</a></li>
+            <li><a href="./register.html" id="sign-up">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <div class="content">
+            <h1>Confirm your Email adress</h1>
+            <span>Enter the code:</span>
+            <form>
+
+                <div class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input class="input-box" type="text" placeholder="******"><br><br>
+                </div>
+
+                <div class="input-container">
+                    <input class="submit-button" onClick="location.href='add-platform.html'" type="submit" value="Verify">
+                </div>
+
+                <input id="menu-toggle" type="checkbox">
+                <label id="menu-label" for="menu-toggle">
+                    <p class="text-mail">Can't find the mail?</p>
+                </label>
+
+                <div id="collapse-menu">
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-box" type="text" placeholder="Email"><br><br>
+                    </div>
+                    <div class="input-container">
+                        <input class="submit-button" type="submit" value="Re-send Email">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</body>

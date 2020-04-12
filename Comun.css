@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Helvetica', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    background-color: #462BB1;
+}
+
+#sign-up {
+    border: 1px solid white;
+}
+
+.logo {
+    color: whitesmoke;
+    font-size: 2vh;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 5%;
+}
+
+.link-list {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 5%;
+}
+
+.link-list a {
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.5vh;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+

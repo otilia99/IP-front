@@ -1,0 +1,27 @@
+Lista cerinte
+
+-pagina de adaugat optiuni de adaugare platforma(facebook/insta/..)
+-account settings page - avatar - drop bar 
+
+main-page:
+
+-add or remove platform button 
+-retele pe care esti conectat - dreapta
+-post box
+-statistic button
+
+-avatar + settings
+-sign-out button cont aplicatie
+-infos
+
+Statistics
+
+-nr de followeri, like-uri(ultima postare)
+-postare cu cele mai multe like-uri so far
+-postare in tendinte
+-nr de ore per aplicatie/ doar pe aplicatia nostra
+-new followers - last 24h
+-top 3 comments last post
+
+
+ 

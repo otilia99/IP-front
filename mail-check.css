@@ -1,0 +1,109 @@
+
+
+.main {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(233, 231, 231, 0.377);
+}
+
+.content {
+    width: 35%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(7, 31, 248, 0.11);
+    border: 3px solid #462BB1;
+}
+
+h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 5%;
+}
+
+span {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    right: 7%;
+}
+
+form {
+    width: 70%;
+    height: 80%;
+    margin-top: 30%;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.icon {
+    padding: 15px;
+    background: #462BB1;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-box {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: 2px solid #462BB1;
+}
+
+.input-box:focus {
+    border: 2px solid #462BB1;
+}
+
+.submit-button {
+    width: 80%;
+    height: 50px;
+    background-color: #462BB1;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #7365ab;
+}
+
+.text-mail {
+    margin-top: 10%;
+}
+
+.container {
+    display: flex;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-label {
+    margin-top: 50%;
+}
+
+#collapse-menu {
+    transition: transform 0.5s;
+    transform-origin: top;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+input:not(:checked)~#collapse-menu {
+    transform: scaleY(0);
+}

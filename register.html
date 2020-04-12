@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Comun.css">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <title>Register</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src=logo_SMA_final.png alt="Logo unavailable" height="70" width="80">
+        </div>
+        <ul class="link-list">
+            <li><a href="./index.html" id="sign-in">Sign in</a></li>
+            <li><a href="./register.html" id="sign-up">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <div class="content">
+            <h1>Register</h1>
+            <form>
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input id ="username" class="input-box" type="text" placeholder="Username..."><br><br>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input id="email" class="input-box" type="text" placeholder="Email..."><br><br>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input id="password" class="input-box" type="password" placeholder="Password..." ><br><br>
+                </div>
+
+                <label class="container">I agree with <a id="policy-link"href="#"> <i>Application Policy</i></a>
+                    <input id="checkb" type="checkbox" required="required">
+                    <span class="checkmark"></span>
+                  </label>
+
+                <div class="btn">
+                    <input class="submit-button" onClick="registerFunction()" id="submitBtn" type="reset" value="Sign Up">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="scriptRegister.js"></script>
+</body>
+
+</html>

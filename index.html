@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Comun.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src=logo_SMA_final.png alt="Logo unavailable" height="70" width="80">
+        </div>
+        <ul class="link-list">
+            <li><a href="#">Sign in</a></li>
+            <li><a href="./register.html" id="sign-up">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <div class="free">
+        </div>
+        <div class="content">
+            <h1>Login</h1>
+            <form>
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input id="emailLogin" class="input-box" type="text" placeholder="Email..." required><br><br>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input id="passLogin" class="input-box" type="password" placeholder="Password..." required><br><br>
+                </div>
+
+                <label class="container"><a class="remember">Remember me</a>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                <div class="forgot-link">
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </div>
+
+                <div class="btn">
+                    <input class="submit-button" onClick="loginFunction()" type="reset" value="LOG IN">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+<script src="loginscript.js"></script>
+</body>
+
+</html>
