@@ -48,43 +48,46 @@ nav {
     justify-content: center;
 }
 
-.content{
-    background-color:  rgba(7, 31, 248, 0.11);
-    width:80vw;
+.content {
+    background-color: rgba(7, 31, 248, 0.11);
+    width: 80vw;
     height: 80vh;
     display: flex;
     flex-direction: column;
 }
 
-.search-area{
+.search-area {
     height: 10%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 }
-.search-area span{
+
+.search-area span {
     font-size: larger;
 }
-.search-box input{
+
+.search-box input {
     height: 5vh;
     width: 40vw;
     border-radius: 10px;
-    background-color:  rgba(153, 153, 155, 0.329);
+    background-color: rgba(153, 153, 155, 0.329);
     border: none;
     background-image: url('search.png');
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     background-size: 15px;
 }
-.returnToSMA a{
+
+.returnToSMA a {
     color: black;
     font-size: larger;
     text-decoration: none;
 }
 
-.buttons-area{
+.buttons-area {
     height: 10%;
     width: 100%;
     display: flex;
@@ -92,23 +95,26 @@ nav {
     align-items: center;
     border-bottom: 1px solid black;
 }
-.buttons-area a{
+
+.buttons-area a {
     color: black;
     text-decoration: none;
 }
 
-.questions-area{
+.questions-area {
     height: 80%;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.questions li{
-    margin-top:20px;
+
+.questions li {
+    margin-top: 20px;
 }
-.questions h1{
-    margin-bottom: 20%;
+
+.questions h1 {
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -116,16 +122,16 @@ nav {
         width: 80%;
         height: 80vh;
     }
-    .input-box{
+    .input-box {
         margin-top: 40%;
     }
     h1 {
         font-size: 20px;
         top: 8%;
     }
-    span{
+    span {
         font-size: 19px;
-        top:20%;
+        top: 20%;
     }
     .icon {
         width: 30px;
@@ -136,16 +142,16 @@ nav {
     #sign-up {
         font-size: 11px;
     }
-    .search-area span{
+    .search-area span {
         font-size: 10px;
     }
-    .returnToSMA a{
+    .returnToSMA a {
         font-size: 10px;
     }
-    .image{
+    .image {
         display: none;
     }
-    .buttons-area{
+    .buttons-area {
         font-size: 10px;
     }
 }
